@@ -91,6 +91,8 @@
 
 # How much total money was pledged to projects that weren't successful?
 
+# Write (and answer) two meaningful questions of the data that can be answered 
+# using similar operations (`filter`, `pull`, `summarize`, `mutate`, etc.).
 
 # Performing analysis by *grouped* observations ----------------- (38 Points)
 
@@ -115,3 +117,5 @@
 # words, which day had the lowest success rate (lowest proportion of projects
 # that were successful)? This might require some creative problem solving....
 
+# Write (and answer) two meaningful questions of the data that can be answered 
+# by _grouping_ the data and performing summary calculations.

@@ -124,7 +124,7 @@ For this assignment, you must use the appropriate `dplyr` functions to complete 
     - 1 point for returning the value of interest (day)
     - 1 point for a meaningful variable name
 
-- Write (and answer) two meaningful questions of the data that can be answered using by _grouping_ the data and performing summary calculations. (**8 points**, 4 points each)
+- Write (and answer) two meaningful questions of the data that can be answered by _grouping_ the data and performing summary calculations. (**8 points**, 4 points each)
     - 1 point for a meaningful question
     - 1 point for grouping
     - 1 point for computing summary information
