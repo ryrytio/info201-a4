@@ -22,16 +22,16 @@
 # Unfortunately, this doesn't give us a great set of insights. Let's write a
 # few functions to try and do this better.
 # First, let's write a function `get_col_info()` that takes as parameters a
-# column name and a dataframe. If the values in the column are *numeric*,
+# column name and a dataframe. If the values in the column are of type *double*,
 # the function should return a list with the keys:
 # - `min`: the minimum value of the column
 # - `max`: the maximum value of the column
 # - `mean`: the mean value of the column
-# If the column is *not* numeric and there are fewer than 10 unique values in
+# If the column is *not* double and there are fewer than 10 unique values in
 # the column, you should return a list with the keys:
 # - `n_values`: the number of unique values in the column
 # - `unique_values`: a vector of each unique value in the column
-# If the column is *not* numeric and there are 10 or *more* unique values in
+# If the column is *not* double and there are 10 or *more* unique values in
 # the column, you should return a list with the keys:
 # - `n_values`: the number of unique values in the column
 # - `sample_values`: a vector containing a random sample of 10 column values

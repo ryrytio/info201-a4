@@ -39,8 +39,19 @@ For this assignment, you must use the appropriate `dplyr` functions to complete 
     - 1 point for each observation, must be driven by the results of the `get_summary_info()` function
 
 ## Asking question of the data ------------------- (**29 points**)
+For each of the following questions, you will earn credit for each of the following:
+(note, this in not necessarily an exhaustive list of possible deductions):
+    - Applying the appropriate logic to answer the question
+    - Returning (only) the appropriate information that answers the question. For example, if you were asked for the names of the projects with the lowest goals, you would only return a _vector_ of the names of those projects (**not** a data frame containing them). In some cases, the result will be only a single value.
+    - Storing the result of the question in a variable with a meaningful name. For example, if you were asked for the project(s) with the lowest goal, you could create a variable called `lowest_goal_projects`.
+
 - What was the name of the project(s) with the highest goal? (**3 points**)
     - -1 if result not in a vector of names
+    - -1 if logic is incorrect
+    - -1 if variable name isn't meaningful
+
+- What was the category of the project(s) with the lowest goal? (**3 points**)
+    - -1 if result not in a vector of category(s)
     - -1 if logic is incorrect
     - -1 if variable name isn't meaningful
 
@@ -49,11 +60,6 @@ For this assignment, you must use the appropriate `dplyr` functions to complete 
     - -1 if variable name isn't meaningful
     - -1 if date values aren't handled appropriately
     - -1 if logic is incorrect
-
-- What was the category of the project(s) with the lowest goal? (**3 points**)
-    - -1 if result not in a vector of category(s)
-    - -1 if logic is incorrect
-    - -1 if variable name isn't meaningful
     
 - What proportion or projects weren't successful? Your result can be a decimal (**4 points**)
     - -1 if result isn't a single numeric value (decimal between 0 and 1)
@@ -82,6 +88,14 @@ For this assignment, you must use the appropriate `dplyr` functions to complete 
     - -1 if the question isn't answered correctly
 
 ## Performing analysis by *grouped* observations ----------------- (38 Points)
+For each of the following questions, you will earn credit for each of the following:
+(note, this in not necessarily an exhaustive list of possible deductions):
+    - Appropriately grouping your data
+    - Accurately computing summary information
+    - Honing in on desired rows
+    - Returning (only) the value of interest (category)
+    - Storing the result of the question in a variable with a meaningful name
+
 - Which category had the most money pledged (total)? (**5 points**)
     - 1 point for grouping
     - 1 point for computing summary information
