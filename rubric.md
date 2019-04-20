@@ -18,10 +18,10 @@ For this assignment, you must use the appropriate `dplyr` functions to complete 
 - Write the `get_col_info()` function (**10 points**)
     - 1 point for extracting the values from the dataframe using `dplyr`
     - 1 point for an appropriate check for the variable type
-    - 2 points for returning proper information for numeric variables
-    - 1 point for dealing with NA values appropriately for numeric variables
-    - 2 points for returning proper values for non-numeric columns with < 10 unique values
-    - 3 points for returning proper values for non-numeric columns with > 10 unique values (including a method to *randomly sample* the values)
+    - 2 points for returning proper information for double variables
+    - 1 point for dealing with NA values appropriately for double variables
+    - 2 points for returning proper values for non-double columns with < 10 unique values
+    - 3 points for returning proper values for non-double columns with > 10 unique values (including a method to *randomly sample* the values)
 
 - Demonstrate that your function works by passing a column name of your choice and the kickstarter data to your function (**2 points**) 
     - 1 point for function working
@@ -41,55 +41,31 @@ For this assignment, you must use the appropriate `dplyr` functions to complete 
 ## Asking question of the data ------------------- (**29 points**)
 For each of the following questions, you will earn credit for each of the following:
 (note, this in not necessarily an exhaustive list of possible deductions):
+    
     - Applying the appropriate logic to answer the question
     - Returning (only) the appropriate information that answers the question. For example, if you were asked for the names of the projects with the lowest goals, you would only return a _vector_ of the names of those projects (**not** a data frame containing them). In some cases, the result will be only a single value.
     - Storing the result of the question in a variable with a meaningful name. For example, if you were asked for the project(s) with the lowest goal, you could create a variable called `lowest_goal_projects`.
 
 - What was the name of the project(s) with the highest goal? (**3 points**)
-    - -1 if result not in a vector of names
-    - -1 if logic is incorrect
-    - -1 if variable name isn't meaningful
 
 - What was the category of the project(s) with the lowest goal? (**3 points**)
-    - -1 if result not in a vector of category(s)
-    - -1 if logic is incorrect
-    - -1 if variable name isn't meaningful
 
 - How many projects had a deadline in 2018? (**4 points**)
-    - -1 if result isn't a single numeric value
-    - -1 if variable name isn't meaningful
-    - -1 if date values aren't handled appropriately
-    - -1 if logic is incorrect
     
 - What proportion or projects weren't successful? Your result can be a decimal (**4 points**)
-    - -1 if result isn't a single numeric value (decimal between 0 and 1)
-    - -1 if variable name isn't meaningful
-    - -1 if filtering logic is incorrect
-    - -1 if percentage calculation is incorrect
 
 - What was the amount pledged for the project with the most backers? (**3 points**)
-    - -1 if result not in a vector of amount(s)
-    - -1 if logic is incorrect
-    - -1 if variable name isn't meaningful
 
 - Of all of the projects that *failed*, what was the name of the project with the highest amount of money pledged? (**3 points**)
-    - -1 if result not in a vector of name(s)
-    - -1 if logic is incorrect
-    - -1 if variable name isn't meaningful
 
 - How much total money was pledged to projects that weren't successful? (**3 points**)
-    - -1 if result not a single value
-    - -1 if logic is incorrect
-    - -1 if variable name isn't meaningful
 
 - Write (and answer) two meaningful questions of the data that can be answered using similar operations (`filter`, `pull`, `summarize`, `mutate`, etc.). (**6 points**, 3 points each)
-    - -1 if question isn't relevant to the dataset
-    - -1 if the question doesn't use `filter` and `pull`
-    - -1 if the question isn't answered correctly
-
+    
 ## Performing analysis by *grouped* observations ----------------- (38 Points)
 For each of the following questions, you will earn credit for each of the following:
 (note, this in not necessarily an exhaustive list of possible deductions):
+    
     - Appropriately grouping your data
     - Accurately computing summary information
     - Honing in on desired rows
@@ -97,46 +73,16 @@ For each of the following questions, you will earn credit for each of the follow
     - Storing the result of the question in a variable with a meaningful name
 
 - Which category had the most money pledged (total)? (**5 points**)
-    - 1 point for grouping
-    - 1 point for computing summary information
-    - 1 point for filtering appropriately
-    - 1 point for returning the value of interest (category)
-    - 1 point for a meaningful variable name
 
 - Which country had the most backers?  (**5 points**)
-    - 1 point for grouping
-    - 1 point for computing summary information
-    - 1 point for filtering appropriately
-    - 1 point for returning the value of interest (country)
-    - 1 point for a meaningful variable name
 
 - Which year had the most money pledged (**5 points**)
-    - 1 point for grouping
-    - 1 point for computing summary information
-    - 1 point for filtering appropriately
-    - 1 point for returning the value of interest (year)
-    - 1 point for a meaningful variable name
 
 - What were the top 3 main categories in 2018 (as ranked by number of backers)? (**5 points**)
-    - 1 point for grouping
-    - 1 point for computing summary information
-    - 1 point for filtering appropriately
-    - 1 point for returning the value of interest (year)
-    - 1 point for a meaningful variable name
 
 - What was the most common day of the week on which to launch a project? (**5 points**)
-    - 1 point for grouping
-    - 1 point for computing summary information
-    - 1 point for filtering appropriately
-    - 1 point for returning the value of interest (day)
-    - 1 point for a meaningful variable name
 
 - What was the least successful day on which to launch a project? (**5 points**)
-    - 1 point for grouping
-    - 1 point for computing summary information
-    - 1 point for filtering appropriately
-    - 1 point for returning the value of interest (day)
-    - 1 point for a meaningful variable name
 
 - Write (and answer) two meaningful questions of the data that can be answered by _grouping_ the data and performing summary calculations. (**8 points**, 4 points each)
     - 1 point for a meaningful question
