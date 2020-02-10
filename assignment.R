@@ -8,7 +8,7 @@
 
 # Load the `dplyr` package
 library(dplyr) #peepee heehee
-library(lintr) #fucc u angie -ryrytio, 2020
+library(lintr) # -ryrytio, 2020
 # Load your data, making sure to not interpret strings as factors
 ks_pledges <- read.csv("kickstarter_pledge.csv", stringsAsFactors = FALSE)
 View(ks_pledges)
