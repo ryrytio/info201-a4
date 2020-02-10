@@ -7,8 +7,8 @@
 # Download the `ks-projects-201801.csv` file into a new folder called `data/`
 
 # Load the `dplyr` package
-library(dplyr)
-library(lintr)
+library(dplyr) #peepee heehee
+library(lintr) #fucc u angie -ryrytio, 2020
 # Load your data, making sure to not interpret strings as factors
 ks_pledges <- read.csv("kickstarter_pledge.csv", stringsAsFactors = FALSE)
 View(ks_pledges)
